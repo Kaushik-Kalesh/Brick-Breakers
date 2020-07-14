@@ -1,0 +1,12 @@
+#gamearea {
+  border: 1px solid black;
+}
+#brick {
+  transform: rotate(90deg)
+}
+#ball {
+  display: none;
+}
+#brick {
+  display: none;
+}
