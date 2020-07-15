@@ -24,7 +24,7 @@ class game {
     //this.score = 0
   }
   start() {
-    //this.ball.reset()
+    this.ball.reset()
     if (this.gamestate !== GameState.menu && this.gamestate !== GameState.newLevel) return
     this.bricks = buildLevels(this, this.levels[this.currentLevel])
     this.gameObjects = [
