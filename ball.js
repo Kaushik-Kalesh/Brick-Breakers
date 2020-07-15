@@ -2,14 +2,12 @@ import { detect } from "./collisionDetection.js"
 
 class drawball {
   constructor(game) {
-    this.x = 10
-    this.y = 80
     this.speedx = 2
     this.speedy = 2
 
     this.ball = document.getElementById('ball')
     this.game = game
-    //this.reset()
+    this.reset()
   }
   draw(ctx) {
     ctx.drawImage(this.ball, this.x, this.y, 16, 16)
@@ -28,10 +26,10 @@ class drawball {
       this.y = 514
     }
   }
-  //reset() {
-    //this.x = 10
-    //this.y = 80
-  //}
+  reset() {
+    this.x = 10
+    this.y = 80
+  }
 }
 
 export default drawball
