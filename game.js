@@ -37,7 +37,7 @@ class game {
     if (this.gamestate === GameState.paused || this.gamestate === GameState.menu) return
 
     if (this.bricks.length === 0) {
-      this.currentLevel = 1
+      this.currentLevel++
       this.gamestate = GameState.newLevel
       this.start()
     }
