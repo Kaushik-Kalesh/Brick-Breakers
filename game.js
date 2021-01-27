@@ -67,7 +67,6 @@ class game {
       ctx.fill()
 
       ctx.font = "60px Verdana";
-      // Create gradient
       var gradient = ctx.createLinearGradient(0, 0, 800, 0);
       gradient.addColorStop("0", " magenta");
       gradient.addColorStop("0.5", "blue");
